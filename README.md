@@ -3,7 +3,7 @@
 This project implements an efficient **OpenMP** program for applying 2D filters using element-wise operations. The implementation is designed for high performance in image and signal processing tasks, leveraging multithreading for parallelism.
 
 ## Key Features
-- **Element-Wise Filtering**: For each pixel $$ A_{ij} $$, the filter computes the element-wise product between a 3×3 kernel $$ K $$ and the corresponding 3×3 submatrix of $$ A $$ centered at $$ (i, j) $$. The filtered value $$ A'_{ij} $$ is obtained by summing all elements of the resulting matrix.
+- **Element-Wise Filtering**: For each pixel Aij, the filter computes the element-wise product between a 3×3 kernel $$ K $$ and the corresponding 3×3 submatrix of $$ A $$ centered at $$ (i, j) $$. The filtered value $$ A'ij $$ is obtained by summing all elements of the resulting matrix.
 - **Boundary Handling**: The filter is not applied to the first and last rows/columns of the input array $$ A $$; these boundary pixels remain unchanged.
 - **Parallel Execution**: Utilizes OpenMP to parallelize the computation, achieving significant speedups on multi-core systems.
 
